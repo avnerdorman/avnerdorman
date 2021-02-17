@@ -808,7 +808,9 @@ def timelineCircle(pulses, onsets):
             modified_onsets.append(1 + int(pulses /4) - x) # odd number of pulses
 
     # create the circle 
-    
+    circle1 = plt.Circle((0, 0), 1, color='grey', fill=False)
+    ax.add_patch(circle1)
+
     for i in range(0,N):
         a = points[i - offset ,2] 
         x,y = (r*np.cos(a), r*np.sin(a))
