@@ -15,7 +15,8 @@ warnings.filterwarnings("ignore", message="numpy.ufunc size changed")
 
 Tresillo = '10010010'
 
-
+def rotate (string, n):
+    return (string[-n:]+string[:-n])
 
 ######## function 1 - pattern ##########
 # the function pattern accepts an integer and duration. It converts the integer to binary and 
